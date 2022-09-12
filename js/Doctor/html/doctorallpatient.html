@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctormodule overview</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/doctorallpatient.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <div class="container-fluid">
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS STRAT -->
+    <!-- <div class="container">
+    <div class="column menu"> -->
+    <div class="offcanvas offcanvas-start sidenav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-body ">
+            <nav>
+                <div class="top1">
+                    <div class="logo">
+                        <img src="/assets/image/logo.png " style="height:43px;">
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="doctormoduleoverview.html" class="active">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Overview</h3>
+                    </a>
+                    <a href="doctorallpatient.html">
+                      <i class="fa-solid fa-wheelchair-move"></i>
+                      <h3>All Patient</h3>
+                  </a>
+                   
+                    <a href="doctormyprofile.html">
+                        <i class="fa fa-fw fa-user"></i>
+                        <h3>My Profile</h3>
+                    </a>
+                    <a href="doctorchangepassword.html">
+                      <i class="fa-solid fa-passport"></i>
+                      <h3>Change Password</h3>
+                  </a>
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <!-- FIRST ROW STRAT -->
+
+    <main class=" section1 mt-5 pt-3 mb-5 pb-3">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- <div class="col-md-3">
+              <div class="card h-100 mb-3">
+                <div class="card-body">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <div class="icon">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-7  ">
+                      <div class="patients">
+                        <P>3,256</P>
+                        <h5>Total Patient For day<h5>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div> -->
+            <div class="col-md-4">
+              <div class="card h-100 mb-3">
+                <div class="card-body">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <div class="icon">
+                        <!-- <i class="fa-solid fa-person-half-dress"></i> -->
+                        <i class="fa-solid fa-person-arrow-down-to-line"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-7  ">
+                      <div class="patients">
+                        <P>3,256</P>
+                        <h5>Total Female Patient<h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card h-100 mb-3">
+                <div class="card-body">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <div class="icon">
+                        <!-- <i class="fa-solid fa-wheelchair-move"></i> -->
+                        <i class="fa-solid fa-person-arrow-up-from-line"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-7  ">
+                      <div class="patients">
+                        <P>3,256</P>
+                        <h5>Total Male Patient<h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card h-100 mb-3">
+                <div class="card-body">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <div class="icon">
+                        <i class="fa-solid fa-address-card"></i>
+                        <!-- <i class="fa-solid fa-wheelchair-move"></i> -->
+                      </div>
+                    </div>
+                    <div class="col-sm-7  ">
+                      <div class="patients">
+                        <P>3,256</P>
+                        <h5>Total Appoinment For day<h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        <!-- <div class="container-fluid mt-4 pt-3">
+            <div class="section2 ">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="card h-100 mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size:21px ;font-weight: 900;">Male vs.Female For Day
+                                    patient paste
+
+                                    <div class="btn-group">
+
+                                        <button type="button" class="btn  dropdown-toggle dropdown-toggle-split"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a>may</a>
+                                            </li>
+                                            <li>
+                                                <a>may</a>
+                                            </li>
+                                            <li>
+                                                <a>may</a>
+                                            </li>
+                                            <li>
+                                                <a>may</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </h5>
+                                <hr />
+                                <div id="container" style="height: 300px; width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div> -->
+        <div class="container-fluid mt-3 pt-2">
+            <div class="section2 ">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="card h-100 ">
+                            <div class="card-body">
+                                <h5 class="card-title">All Patient List</h5>
+                                <hr />
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                <div class="table">
+                                    <table class="table table-bordered  table-striped">
+                                        <thead>
+                                            <tr>
+
+                                                <th scope="col">Patient ID</th>
+                                                <th scope="col">Patient Name</th>
+                                                <th scope="col">Last Visit</th>
+                                                <th scope="col">Specialization</th>
+                                                <th scope="col">Problem</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>1</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@mdo</td>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>2</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>3</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@twitter</td>
+                                                <td>Jacob</td>
+                                                <td>Jacob</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>4</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>5</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>6</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>7</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>8</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+
+                                                </th>
+                                                <td>9</td>
+                                                <td> <a href="doctorpatientdtails.html">otto </a>
+                                                </td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+
+                                            <td>10</td>
+                                            <td> <a href="doctorpatientdtails.html">otto </a>
+                                            </td>
+                                            <td>@fat</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+
+                                        <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+
+    <script src="/assets/js/Doctor/js/doctormoduleoverview.js"></script>
+
+
+
+</body>
+
+</html>

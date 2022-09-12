@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patients</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/patients.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <div class="container-fluid">
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS STRAT -->
+    <!-- <div class="container">
+    <div class="column menu"> -->
+    <div class="offcanvas offcanvas-start sidenav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-body ">
+            <nav>
+                <div class="top1">
+                    <div class="logo">
+                        <img src="/assets/image/logo.png " style="height:43px;">
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="overview.html" class="active">
+                        <i class="fa-solid fa-hospital" style="height: 20px;width:20px;"></i>
+                        <h3>Overview</h3>
+                    </a>
+                    <a href="patients.html">
+
+                        <i class="fa-solid fa-wheelchair"></i>
+                        <h3>Patient</h3>
+                    </a>
+                    <a href="appoinmentpage.html">
+
+                        <i class="fa-solid fa-hospital-user"></i>
+                        <h3> Appointment</h3>
+                    </a>
+                    <a href="myprofile.html">
+                        <i class="fa fa-fw fa-user"></i>
+                        <h3>My Profile</h3>
+                    </a>
+
+                    <a href="changepassword.html">
+                        <i class="fa-solid fa-passport"></i>
+                        <h3>Change Password</h3>
+                    </a>
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <!-- FIRST ROW STRAT -->
+
+    <main class=" section1 mt-5 pt-3 mb-4 pb-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 mb-3">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-sm-5 ">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-person-cane"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7  ">
+                                    <div class="patients">
+                                        <P>3,256</P>
+                                        <h5>Total Inpatient For day<h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 mb-3">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-sm-5 ">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-person-breastfeeding"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7  ">
+                                    <div class="patients">
+                                        <P>3,256</P>
+                                        <h5>Total Outpatient For day<h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card h-100 mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size:21px ;font-weight: 900;">Male vs.Female For Day</h5>
+                            <div id="container" style="height: 130px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="section2 " style="margin-top: 2%;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card h-100 mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Patient List</h5>
+                                <hr />
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                <div class="table">
+                                    <table id="example" class="table table-bordered table-striped data-table"
+                                        style="padding: 3px; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Patient ID</th>
+                                                <th scope="col">Patient Name</th>
+                                                <th scope="col">Age</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Last Visit</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+
+                                                <td> <a href="assgindoctor.html">
+                                                        Pharmecy
+                                                    </a> </td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td><a href="assgindoctor.html"> phrmacy </a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>@twitter</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td><a href="assindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td><a href="assgindoctor.html">
+                                                        Jacob</a></td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+
+                                        <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+    <script src="/assets/js/Reception/js/patients.js"></script>
+    
+</body>
+
+</html>

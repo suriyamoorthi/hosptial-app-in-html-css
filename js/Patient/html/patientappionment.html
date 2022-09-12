@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinmentpage</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/patientappionment.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <div class="container-fluid">
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- OFFCANVAS TOGGLER-BOTTION -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OFFCANVAS STRAT -->
+    <!-- <div class="container">
+        <div class="column menu"> -->
+    <div class="offcanvas offcanvas-start sidenav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <!-- <div class="offcanvas-header"> -->
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <!-- </div> -->
+        <div class="offcanvas-body">
+
+
+
+            <!-- OFFCANVAS END -->
+            <!-- <div class="container">
+              <div class="column menu"> -->
+            <nav>
+                <div class="top1">
+                    <div class="logo">
+                        <img src="/assets/image/logo.png " style="height:43px;">
+                    </div>
+                </div>
+
+
+                <div class="sidebar">
+
+                    <a href="patientappionment.html">
+                        <i class="fa-solid fa-hospital-user" ></i>
+                        <h3> Appointment</h3>
+                    </a>
+                    <a href="patientvisithistory.html">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        <h3>Visit History</h3>
+                    </a> 
+                </a>
+                <a href="patientdoctorlist.html">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h3>Doctor List</h3>
+                </a> 
+                    <a href="patientmyprofile.html">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>My Profile</h3>
+                    </a>
+                    <a href="patientchangepassword.html">
+                        <i class="fa-solid fa-passport"></i>
+                        <h3>Change Password</h3>
+                    </a>
+                   
+                    <a href="index.html" >
+                      
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main class="form mt-5 pt-3 mb-5 pb-3" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">AppointmentForm</h5>
+                            <hr>
+
+                            <div class="row ">
+                                <div class="col-sm-6 ">
+                                    <div class="from-group mb-3 ">
+                                        <label for="first name" class="form-label">First Name</label>
+                                        <input type="first name" class="form-control" id="password"
+                                            placeholder="Enter Your Email ">
+                                        <!-- "font-family:'Poppins', sans-serif; font-weight:300" -->
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  ">
+                                    <div class=" from-group mb-3">
+                                        <label for="last name" class="form-label">Laste name</label>
+                                        <input type="last name" class="form-control" id="Password"
+                                            placeholder="Enter Your Laste name">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row ">
+                                <div class="col-sm-6  mb-3">
+                                    <div class="from-group">
+                                        <label for="first name" class="form-label">Email</label>
+                                        <input type="first name" class="form-control" id="password"
+                                            placeholder="Enter Your Email ">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6  mb-3">
+                                    <div class="from-group">
+                                        <label for="first name" class="form-label">Confrom Email</label>
+                                        <input type="first name" class="form-control" id="password"
+                                            placeholder="Enter Your Confrom Email ">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="gender">
+                                <div class="row">
+                                    <label for="first name" class="form-label">Gender</label>
+                                    <div class="col-sm-6 ">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6  mb-3">
+                                        <div class="form-check1">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="phone number">
+                                        <div class="from-group mb-3">
+                                            <label for="first name" class="form-label">Phone Number</label>
+                                            <input type="first name" class="form-control" id="password"
+                                                placeholder="Enter Your Phone Number ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="Date">
+                                        <div class="from-group mb-3">
+                                            <label for="first name" class="form-label">Date</label>
+                                            <input type="first name" class="form-control" id="password"
+                                                placeholder="Enter Your Date ">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label"> File </label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+
+                            <div class="address">
+                                <label for="first name" class="form-label"> Address</label>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="Enter Your email">
+                                    <label for="floatingInput"> Enter your address</label>
+                                </div>
+                            </div>
+
+
+                            <div class="city">
+                                <div class="row">
+                                    <div class="col-sm-6 ">
+                                        <div class="from-group mb-3">
+                                            <label for="first name" class="form-label">City</label>
+                                            <input type="first name" class="form-control" id="password"
+                                                placeholder="Enter Your City ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <div class="from-group mb-3">
+                                            <label for="first name" class="form-label">Pincode</label>
+                                            <input type="first name" class="form-control" id="password"
+                                                placeholder="Enter Your Pincode ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+
+                            <div class="footer">
+                                <div class="mb-3 from-group1">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Please Conform</label>
+                                </div>
+                            </div>
+                            <div class="from-group2 mb-3 " >
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+<div class="col-sm-1"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page</title>
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/addpatient.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <div class="container-fluid">
+
+      <!-- OFFCANVAS TOGGLER-BOTTION -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- OFFCANVAS TOGGLER-BOTTION -->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OFFCANVAS STRAT -->
+  <!-- <div class="container">
+        <div class="column menu"> -->
+  <div class="offcanvas offcanvas-start sidenav" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <!-- <div class="offcanvas-header"> -->
+    <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+    <!-- </div> -->
+    <div class="offcanvas-body ">
+
+
+
+      <!-- OFFCANVAS END -->
+      <!-- <div class="container">
+              <div class="column menu"> -->
+      <nav>
+        <div class="top1">
+          <div class="logo">
+            <img src="/assets/image/logo.png " style="height:43px;">
+          </div>
+        </div>
+
+
+        <div class="sidebar">
+          <li>
+            <a href="adminpage.html" class="active">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>Overview</h3>
+            </a>
+          </li>
+
+          <li>
+            <a class="link sidenav-link" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-laptop-medical"></i>
+                <!-- <i class="fa-light fa-user-nurse-hair"></i> -->
+                <h3> Reception</h3>
+                <span class="icon  ms-auto mb-2">
+                    <sapn class="fa-solid fa-chevron-down"></sapn>
+                </span>
+            </a>
+            <div class="collapse" id="collapseExample5">
+                <a href="addpatient.html">
+                    <h3>Add Reception </h3>
+                </a>
+                <a href="allrecption.html">
+                    <h3>All Reception</h3>
+                </a>
+        <li>
+          <li>
+
+            <a class="link sidenav-link" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-wheelchair"></i>
+              <h3> Patients</h3>
+              <span class="icon ms-auto mb-2">
+                <sapn class="fa-solid fa-chevron-down"></sapn>
+              </span>
+            </a>
+            <div class="collapse" id="collapseExample1">
+              <a href="addpatient.html">
+                <h3>Add Patient</h3>
+              </a>
+              <a href="allpatients.html">
+                <h3>All Patients</h3>
+              </a>
+              
+            </div>
+          </li>
+
+
+          <a class=" sidenav-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="fa-solid fa-hospital-user"></i>
+            <h3>Appionment</h3>
+            <span class="icon  ms-auto mb-2 ">
+              <sapn class="fa-solid fa-chevron-down"></sapn>
+            </span>
+          </a>
+          <div class="collapse" id="collapseExample2">
+
+            <a href="addappointment.html">
+              <h3>Add Appioment</h3>
+            </a>
+            <a href="allappointment.html">
+              <h3>All Appioment</h3>
+            </a>
+            
+
+          </div>
+
+
+          <li>
+
+            <a class="link sidenav-link" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-user-doctor"></i>
+              <h3> Doctor</h3>
+              <span class="icon  ms-auto mb-2">
+                <sapn class="fa-solid fa-chevron-down"></sapn>
+              </span>
+            </a>
+            <div class="collapse" id="collapseExample3">
+              <a href="adddoctor.html">
+                <h3>Add Doctor</h3>
+              </a>
+              <a href="alldoctor.html">
+                <h3>All Doctors</h3>
+              </a>
+              
+            </div>
+          </li>
+          <li>
+
+            <a class="link sidenav-link" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <h3> Payments</h3>
+              <span class="icon  ms-auto mb-2">
+                <sapn class="fa-solid fa-chevron-down"></sapn>
+              </span>
+            </a>
+            <div class="collapse" id="collapseExample4">
+              <a href="#">
+                <h3>Add Payments</h3>
+              </a>
+              <a href="#">
+                <h3>All Payments</h3>
+              </a>
+              <a href="#">
+                <h3>Payment Invoice</h3>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <a href="adminmyprofile.html">
+                <i class="fa-solid fa-eye"></i>
+                <h3>My Profile</h3>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="adminchangepassword.html">
+                <i class="fa-solid fa-passport"></i>
+                <h3>Change Password</h3>
+            </a>
+
+        </li>
+
+
+          <li>
+            <a href="index.html" style="margin-top:50px ;">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <h3>Logout</h3>
+            </a>
+          <li>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <main class="from mt-5 pt-3 mb-5 pb-3">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Patient</h5>
+                        <hr>
+                        <div class="row ">
+                            <div class="col-sm-6 ">
+                                <div class="from-group mb-4 ">
+                                    <label for="patient name" class="form-label">Patient Name</label>
+                                    <input type="patient name" class="form-control" id="name"
+                                        placeholder="Enter Your Patient Name ">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6  ">
+                                <div class=" from-group mb-4">
+                                    <label for="date of birth" class="form-label">Date Of Brith</label>
+                                    <input type="date of birth" class="form-control" id="date of birth"
+                                        placeholder="dd-mm-yy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-6 ">
+                                <div class="from-group mb-4 ">
+                                    <label for="age" class="form-label">Age</label>
+                                    <input type="age" class="form-control" id="age" placeholder="Enter Your age ">
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6  ">
+                                <div class=" from-group mb-4">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="phone" class="form-control" id="phone"
+                                        placeholder="Enter Your phone">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-6 ">
+                                <div class="from-group mb-4 ">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Enter Your Email ">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6  ">
+
+                                <div class=" from-group mb-4">
+                                    <label for="last name" class="form-label">Gender</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                        <option value="3">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address">
+                            <label for="first name" class="form-label"> Address</label>
+                            <div class="form-floating mb-4">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="Enter Your email">
+                                <label for="floatingInput"> Enter your address</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="formFile" class="form-label"> File</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                        <hr>
+
+                        <div class="footer">
+                            <div class="mb-4 from-group1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Please Conform</label>
+                            </div>
+                        </div>
+                        <div class="from-group2 mb-4 ">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</main>
+
+
+</body>
+
+</html>
